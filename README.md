@@ -1,6 +1,6 @@
 # rock-paper-scissors
 
-##Rock, Paper and Scissors game project form The Odin Project Foundations
+## Rock, Paper and Scissors game project form The Odin Project Foundations
 
 I created the rock, paper, scissors game by dividing the problem into **four subproblems**, which are the four main functions that drive the game's logic.
 
