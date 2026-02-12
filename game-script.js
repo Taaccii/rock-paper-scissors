@@ -48,34 +48,34 @@ function playRound(humanChoice, computerChoice) {
 }
 
 // 5 Round logic
-function playGame() {
-  let humanScore = 0;
-  let computerScore = 0;
+// function playGame() {
+//   let humanScore = 0;
+//   let computerScore = 0;
 
-  for (let i = 0; i < 5; i++) {
+//   for (let i = 0; i < 5; i++) {
     
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
+//     const humanSelection = getHumanChoice();
+//     const computerSelection = getComputerChoice();
 
-    const result = playRound(humanSelection, computerSelection);
+//     const result = playRound(humanSelection, computerSelection);
 
-    if (result === 'win') {
-      humanScore++;
-      console.log(`Round ${i+1}: You Win! ${humanSelection} beats ${computerSelection} `);
-    } else if (result === 'lose') {
-      computerScore++;
-      console.log(`Round ${i+1}: You Lose! ${computerSelection} beats ${humanSelection} `);
-    } else if (result === 'tie') {
-      computerScore++;
-      humanScore++;
-      console.log(`Round ${i+1}: It's a Tie! ${humanSelection} = ${computerSelection} `);
-    }
-  }
+//     if (result === 'win') {
+//       humanScore++;
+//       console.log(`Round ${i+1}: You Win! ${humanSelection} beats ${computerSelection} `);
+//     } else if (result === 'lose') {
+//       computerScore++;
+//       console.log(`Round ${i+1}: You Lose! ${computerSelection} beats ${humanSelection} `);
+//     } else if (result === 'tie') {
+//       computerScore++;
+//       humanScore++;
+//       console.log(`Round ${i+1}: It's a Tie! ${humanSelection} = ${computerSelection} `);
+//     }
+//   }
 
-if (humanScore > computerScore) console.log('You Win the Game!');
-else if (computerScore > humanScore) console.log('You Lose the Game!');
-else console.log("It's a Tie Game!");
+// if (humanScore > computerScore) console.log('You Win the Game!');
+// else if (computerScore > humanScore) console.log('You Lose the Game!');
+// else console.log("It's a Tie Game!");
 
-}
+// }
 
 console.log(playGame());
