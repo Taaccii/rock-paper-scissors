@@ -5,6 +5,7 @@
 body {
   min-height: 100vh;
   margin: 0;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   font-family: "Roboto", Helvetica, sans-serif;
@@ -13,6 +14,8 @@ body {
 
 main {
   flex: 1;
+  max-width: 100%;
+  padding: 0 15px;
 }
 
 
@@ -70,6 +73,19 @@ header, .score-message-box {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
+.reset-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.reset-btn {
+  width: 250px;
+  padding: 15px;
+  font-size: 25px;
+  color: #e5e7eb;;
+}
+
 .sign {
   font-size: 60px;
 }
@@ -123,4 +139,148 @@ footer a {
 footer a:hover {
   color: #21a1f1;
   text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  
+  body {
+    padding: 5px;
+  }
+  
+  main {
+    padding: 0 10px;
+  }
+  
+  
+  header, .score-message-box {
+    margin: 10px 15px;
+    padding: 15px 10px;
+    max-width: 100%;
+  }
+  
+  header {
+    margin-bottom: 50px;
+  }
+  .title {
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  .score-message-box {
+    margin: 20px 15px; 
+  }
+  
+  .score-info {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .score-message {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  
+  .score-container {
+    margin: 30px auto; 
+    gap: 30px;
+    max-width: 100%;
+  }
+  
+  .score-box {
+    width: 120px;
+  }
+  
+  .sign {
+    font-size: 50px; 
+  }
+  
+  .score {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  
+  .buttons {
+    gap: 15px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    width: 85px;
+    height: 85px;
+  }
+  
+  .btn .sign {
+    font-size: 45px;
+  }
+  
+ 
+  .reset-container {
+    margin-top: 20px;
+  }
+  
+  .reset-btn {
+    width: 200px;
+    padding: 12px;
+    font-size: 16px;
+  }
+  
+  
+  footer {
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  
+  .title {
+    font-size: 24px;
+  }
+  
+  .score-message-box {
+    margin: 15px 10px;
+    padding: 10px;
+  }
+  
+  .score-info {
+    font-size: 16px;
+  }
+  
+  .score-message {
+    font-size: 14px;
+  }
+  
+  .score-container {
+    margin: 20px auto;
+  }
+  
+  .btn {
+    width: 75px;
+    height: 75px;
+  }
+  
+  .btn .sign {
+    font-size: 40px;
+  }
+  
+  .sign {
+    font-size: 40px;
+  }
+  
+  .score {
+    font-size: 16px;
+  }
+  
+  .reset-btn{
+    font-size: 16px;
+    width: 150px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
 }
