@@ -47,35 +47,30 @@ function playRound(humanChoice, computerChoice) {
   } else return 'lose';
 }
 
-// 5 Round logic
-// function playGame() {
-//   let humanScore = 0;
-//   let computerScore = 0;
 
-//   for (let i = 0; i < 5; i++) {
-    
-//     const humanSelection = getHumanChoice();
-//     const computerSelection = getComputerChoice();
+let humanScore = 0;
+let computerScore = 0;
 
-//     const result = playRound(humanSelection, computerSelection);
 
-//     if (result === 'win') {
-//       humanScore++;
-//       console.log(`Round ${i+1}: You Win! ${humanSelection} beats ${computerSelection} `);
-//     } else if (result === 'lose') {
-//       computerScore++;
-//       console.log(`Round ${i+1}: You Lose! ${computerSelection} beats ${humanSelection} `);
-//     } else if (result === 'tie') {
-//       computerScore++;
-//       humanScore++;
-//       console.log(`Round ${i+1}: It's a Tie! ${humanSelection} = ${computerSelection} `);
-//     }
-//   }
+const buttons = document.querySelectorAll('.btn');
 
-// if (humanScore > computerScore) console.log('You Win the Game!');
-// else if (computerScore > humanScore) console.log('You Lose the Game!');
-// else console.log("It's a Tie Game!");
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    const humanChoice = button.dataset.choice;
+    const computerChoice = getComputerChoice();
+    const result = playRound(humanChoice, computerChoice);
 
-// }
+    if (result === 'win') {
+      humanScore++;
+    } else if (result === 'lose') {
+      computerScore++;
+    } else if (result === 'tie') {
+    }
 
-console.log(playGame());
+    if (humanScore === 5 || computerScore === 5){
+
+    }
+  });
+});
+
+
