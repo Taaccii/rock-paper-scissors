@@ -1,11 +1,70 @@
-# rock-paper-scissors
+# Rock Paper Scissors
 
-## Rock, Paper and Scissors game project form The Odin Project Foundations
+> Classic hand game with animated UI and score tracking.
 
-I created the rock, paper, scissors game by dividing the problem into **four subproblems**, which are the four main functions that drive the game's logic.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![MIT License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-I had a hard time getting the game to progress through five rounds while requiring user input each time.
-The solution was simpler than expected. I had a lot of fun putting the project on paper with pseudocode and diagrams and then converting it all into code. It really does make everything easier... especially when you split the work across two different days.
+![Rock Paper Scissors Preview](./rock-paper-scissors-preview.png)
 
+---
 
-**I reworked the project after learning DOM manipulation and managed to create a simple yet responsive and clean interface to make the game more interactive. I'm very happy with the result! I managed to incorporate some responsive design to make it work on mobile too. I did some research and learned a bit about the basics.**
+## 🔗 Live Demo
+
+**Live Demo:** [taaccii.github.io/rock-paper-scissors](https://taaccii.github.io/rock-paper-scissors/)
+
+---
+
+## ✨ Features
+
+- **First to 5 wins** — progressive score tracking across rounds
+- **Animated UI** — visual feedback on every move
+- **CPU opponent** — randomized computer choices
+- **Responsive** — works on desktop and mobile
+
+---
+
+## 🛠️ Tech Stack
+
+| Component | Technology |
+|-----------|------------|
+| **Markup** | HTML5 |
+| **Style** | CSS3 |
+| **Logic** | JavaScript ES6+ |
+
+---
+
+## 💡 What I Learned
+
+- Breaking a problem into subproblems and mapping them to functions
+- Managing game state across multiple rounds with user input
+- Reworking a console-based project into a full DOM interface
+- Applying responsive design with CSS media queries
+
+---
+
+## 📝 Notes
+
+Started as a pure JavaScript console game, then reworked from scratch after learning DOM manipulation. Planning with pseudocode and diagrams before writing a single line of code made the whole process smoother — especially splitting the work across multiple sessions.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see [`LICENSE`](./LICENSE) for details.
+
+---
+
+## 👨‍💻 Author
+
+**TacciDev**
+
+- 📧 [taccidev@gmail.com](mailto:taccidev@gmail.com)
+- 🐙 GitHub: [@Taaccii](https://github.com/Taaccii)
+- 💼 LinkedIn: [alessandro-barletta-dev](https://linkedin.com/in/alessandro-barletta-dev)
+
+---
+
+> *Project built as part of [The Odin Project](https://www.theodinproject.com) Foundations curriculum.*
